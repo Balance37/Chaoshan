@@ -1,31 +1,27 @@
 <!--
-
-https://en.wikipedia.org/wiki/Shantou
-
-
-<a href = “#chapter4">   </a>
 -->
 
 
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<style>
-		table, th, td{
-			border:1px solid black;
-		}
-		</style>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>Task1</title>
 	</head>
 	<body>
-		<h1>Chaoshan</h1>
-		<ul>
-			<li> <a href="#Shantou">Shantou</a> </li>
-			<li> <a href="#Chaozhou">Chaozou</a> </li>
-			<li> <a href="#Jieyang">Jieyang</a> </li>
-			<li> <a href="#More">Know more about Chaoshan</a></li>
-		</ul>
+		<div class="headbar">
+			<h1 style="color:white; float:left;">Chaoshan</h1>
+			<div class="navigation">
+				<ul>
+					<li><a href="#Shantou">Shantou</a></li>
+					<li><a href="#Chaozhou">Chaozou</a></li>
+					<li><a href="#Jieyang">Jieyang</a></li>
+					<li><a href="#More">Know more about Chaoshan</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="Shantou">
 		<article><a name="Shantou">
 			<header>
 				<h2>Shantou</h2>
@@ -81,7 +77,7 @@ https://en.wikipedia.org/wiki/Shantou
 					<td>Nanao</td>
 					<td>60,304</td>
 				</tr>
-				<tr>
+				<tr id="totalPopulation">
 					<td>Total population</td>
 					<td>5,389,328</td>
 				</tr>
@@ -94,9 +90,14 @@ https://en.wikipedia.org/wiki/Shantou
 				economic centre, and is home to <a href="https://en.wikipedia.org/wiki/Shantou_University">Shantou University</a>, a member of the Project 211 group.
 			</p>
 		</a></article>
-		<img src="https://isocarp.org/app/uploads/2014/06/Shantou.jpg" alt="Shantou's Old Building" title="Shantou's Building">
+		</div>
+		<div class="image"><article>
+		<img src="Shantou1.jpg" alt="Shantou's Old Building" title="Shantou's Building">
 		<br>
-		<img src="https://i.ytimg.com/vi/t48mdB2k8vI/maxresdefault.jpg" alt="Shantou's City View" title="Shantou's City View" height="400" width="600">
+		<img src="Shantou2.jpg" alt="Shantou's City View" title="Shantou's City View" height="400" width="600">
+		</article>
+		</div>
+		<div class="Chaozhou">
 		<article><a name="Chaozhou">
 			<header>
 				<h2>Chaozhou</h2>
@@ -119,8 +120,10 @@ https://en.wikipedia.org/wiki/Shantou
 				<li>Raoping</li>
 				<li>Fengxi</li>
 			<ul>
-			<img src="http://images4.mygola.com/6a95fa8111c98ddce992859959c85823_1359190416_l.jpg" alt="XiangziQiao in Chaozhou" title="XiangziQiao in Chaozhou" height="400" width="600">
+			<img src="Chaozhou1.jpg" alt="XiangziQiao in Chaozhou" title="XiangziQiao in Chaozhou" height="400" width="600">
 		</a></article>
+		</div>
+		<div class="Jieyang">
 		<article><a name="Jieyang">
 			<header>
 				<h2>Jieyang</h2>
@@ -142,37 +145,46 @@ https://en.wikipedia.org/wiki/Shantou
 				<li>Jiexi</li>
 				<li>Rongcheng</li>
 			</ol>
-			<img src="http://i757.photobucket.com/albums/xx216/davidwei01/2013FebShanghai/37779915.jpg~original" alt="Jieyang Street View" title="Jieyang Street View">
+			<img src="Jieyang1.jpg" alt="Jieyang Street View" title="Jieyang Street View">
 		</a></article>
-		<div class="More"><a name="More">
+		</div>
+		<div class="More">
+		<article>
+		<a name="More">
 			<h2>Know More about Chaoshan</h2>
 			<form>
+			<div>
 				<label for="emailadress">Email address</label>
 				<input type="text" name="emailadress" />
 				<br>
 				<label for="emailadress">Please make sure to enter in correct email format</label>
-				<br>
+			</div>
+			<div>
 				<label for="password">Password</label>
 				<input type="password" name="password">
+			</div>
+			<div>
 				<label for="repassword">Re-enter your password</label>
 				<input type="password" name="repassword">
 				<br>
-				<label for="password">Password should contain 6-16 characters or numbers</label>
-			</form>
-			<form>
+				<label for="repassword">Password should contain 6-16 characters or numbers</label>
+			</div>
+			<div>
 				<label>Gender: </label>
 				<label>Male</label>
 				<input type="radio" value="1" name="gender">
 				<label>Female</label>
 				<input type="radio" value="2" name="gender">
-				
+			</div>
+			<div>
 				<label>City</label>
 				<select>
 					<option>Beijing</option>
 					<option>Shanghai</option>
 					<option>Guangzhou</option>
 				</select>
-				
+			</div>
+			<div>
 				<label>Hobby: </label>
 				<label for="Hobby-Sports">Sports</label>
 				<input type="checkbox" value="1" name="Hobby-Sports">
@@ -180,12 +192,15 @@ https://en.wikipedia.org/wiki/Shantou
 				<input type="checkbox" value="2" name="Hobby-Arts>
 				<label for="Hobby-Science">Science</label>
 				<input type="checkbox" value="3" name="Hobby-Science">
-				<br>
+			</div>
+			<div>
 				<label> What else do you want to know about Chaoshan:</label>
 				<textarea>Please enter here</textarea>
-				<input type="submit" value="Submit">
+			</div>
+				<input class="submitButton" type="submit" value="Submit">
 			</form>
 		</a>
+		</article>
 		</div>
 		
 		
