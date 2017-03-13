@@ -55,6 +55,41 @@ form{
 	position:relative;
 }
 
+form .left{
+	float:left;
+	text-align:right;
+	width: 35%;
+	padding-right: 15px;
+}
+
+form .right{
+	margin-left:35%;
+	padding-left:15px;
+}
+
+footer{
+	background-color:black;
+	width:100%;
+	height:80px;
+}
+
+.submitButton{
+	width: 100%;
+	height: 40px;
+	color:white;
+	background-color:blue;
+	border-radius: 10px;
+	border:none;
+
+}
+
+footer p{
+	color:white;
+	font-size:20px;
+	text-align:center;
+	padding-top:20px;
+}
+
 
 
 
